@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link type="text/css" href="estilos.css" rel="stylesheet" />
+        <script src="funciones.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="cabecera.png" style="width:500px;">
+        </header>
+        <section>
+            <H2>Especifica tus datos personales:</H2>
+            <form id="formulario" name="formulario" onsubmit="return validar()">
+                <div id="dato">
+                    <label for="nombre">Nombre</label>
+                    <br/>
+                    <input type="text" name="nombre" id="nombre" />
+                    <br/>
+                </div>
+                <div id="dato">
+                    <label for="apellidos">Apellidos</label>
+                    <br/>
+                    <input type="text" name="apellidos" id="apellidos" />
+                    <br/>
+                </div>
+                <div id="dato">
+                    <label for="telefono">Teléfono</label>
+                    <br/>
+                    <input type="text" name="telefono" id="telefono" />
+                    <br/>
+                </div>
+                <div id="dato">
+                    <label for="email">Correo Electrónico</label>
+                    <br/>
+                    <input type="text" name="email" id="email" />
+                </div>
+                <div id="dato">
+                    <label for="sexo">Sexo</label>
+                    <br/>
+                    <select name="sexo">
+                        <option value="H">Hombre</option> 
+                        <option value="M">Mujer</option> 
+                    </select>
+                </div>
+                <div id="submit">
+                    <input type="submit" value="Guardar" />
+                </div>
+             </form>
+        </section>
+        <footer>
+        </footer>
+    </body>
+</html>
